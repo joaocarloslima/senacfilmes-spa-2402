@@ -1,9 +1,8 @@
 import { getDetails } from "@/app/actions/getDetails";
 import { NavBar } from "@/app/components/navbar";
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 
-export default async function Sobre({params}: Params) {
-    const filme = await getDetails(params.id)
+export default async function Sobre() {
+    const filme = await getDetails(937287)
 
     return (
         <main className="flex min-h-screen flex-col">
